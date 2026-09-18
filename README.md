@@ -15,6 +15,10 @@ A backend-heavy operations platform I built around **users, campaigns, imports, 
 
 The commercial domain is intentionally abstracted. The interesting part here is the backend system.
 
+<p align="center">
+  <img src="./assets/overview.svg" width="100%" alt="System overview"/>
+</p>
+
 ## <code>01 / backend_surface</code>
 
 <table>
