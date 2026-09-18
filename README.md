@@ -44,6 +44,10 @@ The commercial domain is abstracted; the backend engineering is the point.
 
 The theme is intentionally boring: **explicit boundary, explicit state, explicit failure**.
 
+<p align="center">
+  <img src="./assets/engineering-signature.svg" width="100%" alt="Engineering signature"/>
+</p>
+
 ## <code>05 / inspect</code>
 
 - [Architecture](docs/ARCHITECTURE.md)
