@@ -47,6 +47,10 @@ Docker-first deployment, health/readiness, structured logs, maintenance scripts 
 </tr>
 </table>
 
+<p align="center">
+  <img src="./assets/architecture-visual.svg" width="100%" alt="Architecture visual"/>
+</p>
+
 ## <code>02 / request_path</code>
 
 ~~~mermaid
@@ -65,6 +69,10 @@ sequenceDiagram
     S-->>A: response
     A-->>C: structured outcome
 ~~~
+
+<p align="center">
+  <img src="./assets/flow-visual.svg" width="100%" alt="Workflow visual"/>
+</p>
 
 ## <code>03 / built_for_failure</code>
 
