@@ -1,18 +1,22 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400">
-<defs>
-<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1020"/><stop offset="1" stop-color="#0d1117"/></linearGradient>
-<linearGradient id="a" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#f85149"/><stop offset="1" stop-color="#a371f7"/></linearGradient>
-<filter id="g"><feGaussianBlur stdDeviation="32"/></filter>
-</defs>
-<rect width="1200" height="400" rx="28" fill="url(#bg)"/>
-<circle cx="1050" cy="50" r="160" fill="#a371f7" opacity=".16" filter="url(#g)"/>
-<circle cx="850" cy="330" r="180" fill="#f85149" opacity=".12" filter="url(#g)"/>
-<g opacity=".08" stroke="#8b949e"><path d="M0 80H1200M0 160H1200M0 240H1200M0 320H1200"/><path d="M150 0V400M300 0V400M450 0V400M600 0V400M750 0V400M900 0V400M1050 0V400"/></g>
-<text x="70" y="105" fill="#8b949e" font-family="monospace" font-size="15">PUBLIC ENGINEERING SHOWCASE</text>
-<text x="70" y="175" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="48" font-weight="700">Campaign Platform</text>
-<rect x="70" y="198" width="520" height="5" rx="2.5" fill="url(#a)"/>
-<text x="70" y="250" fill="#c9d1d9" font-family="Arial,Helvetica,sans-serif" font-size="20">Backend-heavy operations with security, migrations and test layers</text>
-<g transform="translate(70 320)"><rect width="132" height="34" rx="17" fill="#161b22" stroke="#30363d"/><text x="66" y="22" text-anchor="middle" fill="#c9d1d9" font-family="monospace" font-size="13">TypeScript</text></g><g transform="translate(220 320)"><rect width="132" height="34" rx="17" fill="#161b22" stroke="#30363d"/><text x="66" y="22" text-anchor="middle" fill="#c9d1d9" font-family="monospace" font-size="13">PostgreSQL</text></g><g transform="translate(370 320)"><rect width="132" height="34" rx="17" fill="#161b22" stroke="#30363d"/><text x="66" y="22" text-anchor="middle" fill="#c9d1d9" font-family="monospace" font-size="13">Playwright</text></g>
-<path d="M935 118 L958 118 L958 204 L790 204" fill="none" stroke="#f85149" opacity=".55"/>
-<g transform="translate(790 90)"><rect width="145" height="56" rx="12" fill="#0d1117" stroke="#f85149"/><text x="72.5" y="33" text-anchor="middle" fill="#f0f6fc" font-family="monospace" font-size="13">api</text></g><g transform="translate(960 90)"><rect width="145" height="56" rx="12" fill="#0d1117" stroke="#30363d"/><text x="72.5" y="33" text-anchor="middle" fill="#c9d1d9" font-family="monospace" font-size="13">auth</text></g><g transform="translate(790 176)"><rect width="145" height="56" rx="12" fill="#0d1117" stroke="#30363d"/><text x="72.5" y="33" text-anchor="middle" fill="#c9d1d9" font-family="monospace" font-size="13">webhooks</text></g><g transform="translate(960 176)"><rect width="145" height="56" rx="12" fill="#0d1117" stroke="#30363d"/><text x="72.5" y="33" text-anchor="middle" fill="#c9d1d9" font-family="monospace" font-size="13">jobs</text></g>
+<rect width="1200" height="400" rx="28" fill="#1a1a1a"/>
+<rect x="1" y="1" width="1198" height="398" rx="27" fill="none" stroke="#404040"/>
+<rect x="0" y="0" width="1200" height="70" rx="28" fill="#242424"/><rect y="40" width="1200" height="30" fill="#242424"/>
+<text x="64" y="44" fill="#c9a227" font-family="Arial" font-size="20" font-weight="700">Campaign Platform</text>
+<text x="64" y="128" fill="#888" font-family="monospace" font-size="12">PUBLIC ENGINEERING SHOWCASE</text>
+<text x="64" y="186" fill="#f5f5f5" font-family="Arial" font-size="48" font-weight="700">Operations backend</text>
+<text x="64" y="224" fill="#d4d4d4" font-family="Arial" font-size="18">Users · campaigns · imports · scheduler · analytics</text>
+<rect x="64" y="247" width="380" height="5" rx="2.5" fill="#c9a227"/>
+<g transform="translate(64 308)"><g transform="translate(0 0)"><rect width="112" height="32" rx="6" fill="#2d2d2d" stroke="#404040"/><text x="56" y="20" text-anchor="middle" fill="#d4d4d4" font-family="monospace" font-size="10">TypeScript</text></g><g transform="translate(126 0)"><rect width="112" height="32" rx="6" fill="#2d2d2d" stroke="#404040"/><text x="56" y="20" text-anchor="middle" fill="#d4d4d4" font-family="monospace" font-size="10">Express 5</text></g><g transform="translate(252 0)"><rect width="112" height="32" rx="6" fill="#2d2d2d" stroke="#404040"/><text x="56" y="20" text-anchor="middle" fill="#d4d4d4" font-family="monospace" font-size="10">PostgreSQL</text></g><g transform="translate(378 0)"><rect width="112" height="32" rx="6" fill="#2d2d2d" stroke="#404040"/><text x="56" y="20" text-anchor="middle" fill="#d4d4d4" font-family="monospace" font-size="10">Playwright</text></g></g>
+<g transform="translate(728 104)">
+<rect width="402" height="220" rx="12" fill="#242424" stroke="#404040"/>
+<text x="20" y="30" fill="#c9a227" font-family="Arial" font-size="16" font-weight="700">Email Campaigns</text>
+<g transform="translate(20 52)">
+<rect width="362" height="138" rx="10" fill="#2d2d2d"/>
+<text x="16" y="25" fill="#f5f5f5" font-family="Arial" font-size="13" font-weight="700">Lifecycle campaign</text>
+<rect x="274" y="10" width="72" height="24" rx="12" fill="#3b82f633"/><text x="310" y="26" text-anchor="middle" fill="#3b82f6" font-family="Arial" font-size="9">sending</text>
+<g transform="translate(16 55)"><text x="0" y="14" fill="#3b82f6" font-family="Arial" font-size="14" font-weight="700">8.4k</text><text x="0" y="31" fill="#888" font-family="monospace" font-size="7">SENT</text></g><g transform="translate(101 55)"><text x="0" y="14" fill="#22c55e" font-family="Arial" font-size="14" font-weight="700">8.1k</text><text x="0" y="31" fill="#888" font-family="monospace" font-size="7">DELIVERED</text></g><g transform="translate(186 55)"><text x="0" y="14" fill="#a855f7" font-family="Arial" font-size="14" font-weight="700">3.2k</text><text x="0" y="31" fill="#888" font-family="monospace" font-size="7">OPENED</text></g><g transform="translate(271 55)"><text x="0" y="14" fill="#f59e0b" font-family="Arial" font-size="14" font-weight="700">940</text><text x="0" y="31" fill="#888" font-family="monospace" font-size="7">CLICKED</text></g>
+<rect x="16" y="105" width="112" height="26" rx="6" fill="#c9a227"/><text x="72" y="122" text-anchor="middle" fill="#000" font-family="Arial" font-size="9" font-weight="700">Open campaign</text>
+</g>
+</g>
 </svg>
