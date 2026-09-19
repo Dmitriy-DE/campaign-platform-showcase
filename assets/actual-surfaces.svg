@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300">
+<rect x=".5" y=".5" width="1199" height="299" rx="24" fill="#1a1a1a" stroke="#404040"/>
+<text x="55" y="56" fill="#f5f5f5" font-family="Arial" font-size="23" font-weight="700">actual surfaces</text>
+<text x="55" y="80" fill="#888888" font-family="monospace" font-size="10">screen names and UI structure taken from the private source</text>
+<g transform="translate(55 112)">
+<rect width="170" height="120" rx="10" fill="#242424" stroke="#404040"/>
+<text x="16" y="27" fill="#c9a227" font-family="monospace" font-size="8">01</text>
+<text x="16" y="56" fill="#f5f5f5" font-family="Arial" font-size="13" font-weight="700">Users</text>
+<text x="16" y="82" fill="#888888" font-family="monospace" font-size="8">operations</text>
+<rect x="16" y="98" width="58" height="4" rx="2" fill="#c9a227" opacity=".55"/>
+</g><g transform="translate(241 112)">
+<rect width="170" height="120" rx="10" fill="#242424" stroke="#404040"/>
+<text x="16" y="27" fill="#c9a227" font-family="monospace" font-size="8">02</text>
+<text x="16" y="56" fill="#f5f5f5" font-family="Arial" font-size="13" font-weight="700">Custom Data</text>
+<text x="16" y="82" fill="#888888" font-family="monospace" font-size="8">imports</text>
+<rect x="16" y="98" width="80" height="4" rx="2" fill="#c9a227" opacity=".55"/>
+</g><g transform="translate(427 112)">
+<rect width="170" height="120" rx="10" fill="#242424" stroke="#404040"/>
+<text x="16" y="27" fill="#c9a227" font-family="monospace" font-size="8">03</text>
+<text x="16" y="56" fill="#f5f5f5" font-family="Arial" font-size="13" font-weight="700">Statistics</text>
+<text x="16" y="82" fill="#888888" font-family="monospace" font-size="8">signals</text>
+<rect x="16" y="98" width="102" height="4" rx="2" fill="#c9a227" opacity=".55"/>
+</g><g transform="translate(613 112)">
+<rect width="170" height="120" rx="10" fill="#242424" stroke="#404040"/>
+<text x="16" y="27" fill="#c9a227" font-family="monospace" font-size="8">04</text>
+<text x="16" y="56" fill="#f5f5f5" font-family="Arial" font-size="13" font-weight="700">Campaigns</text>
+<text x="16" y="82" fill="#888888" font-family="monospace" font-size="8">cards + stats</text>
+<rect x="16" y="98" width="58" height="4" rx="2" fill="#c9a227" opacity=".55"/>
+</g><g transform="translate(799 112)">
+<rect width="170" height="120" rx="10" fill="#242424" stroke="#404040"/>
+<text x="16" y="27" fill="#c9a227" font-family="monospace" font-size="8">05</text>
+<text x="16" y="56" fill="#f5f5f5" font-family="Arial" font-size="13" font-weight="700">Scheduler</text>
+<text x="16" y="82" fill="#888888" font-family="monospace" font-size="8">timed runs</text>
+<rect x="16" y="98" width="80" height="4" rx="2" fill="#c9a227" opacity=".55"/>
+</g><g transform="translate(985 112)">
+<rect width="170" height="120" rx="10" fill="#242424" stroke="#404040"/>
+<text x="16" y="27" fill="#c9a227" font-family="monospace" font-size="8">06</text>
+<text x="16" y="56" fill="#f5f5f5" font-family="Arial" font-size="13" font-weight="700">Analytics</text>
+<text x="16" y="82" fill="#888888" font-family="monospace" font-size="8">reporting</text>
+<rect x="16" y="98" width="102" height="4" rx="2" fill="#c9a227" opacity=".55"/>
+</g>
+<text x="55" y="272" fill="#888888" font-family="monospace" font-size="8">illustrative data · source-derived screens, hierarchy and visual language</text>
+</svg>
