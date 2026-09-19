@@ -1,33 +1,33 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300">
-<defs><linearGradient id="g"><stop stop-color="#f85149"/><stop offset="1" stop-color="#a371f7"/></linearGradient></defs>
-<rect width="1200" height="300" rx="26" fill="#0d1117" stroke="#30363d"/>
-<text x="48" y="58" fill="#f0f6fc" font-family="Arial" font-size="24" font-weight="700">Core request flow</text>
-<text x="48" y="84" fill="#8b949e" font-family="monospace" font-size="11">the objects / states the rest of the system is built around</text>
+<defs><linearGradient id="g"><stop stop-color="#c9a227"/><stop offset="1" stop-color="#6bb3d9"/></linearGradient></defs>
+<rect width="1200" height="300" rx="26" fill="#1a1a1a" stroke="#404040"/>
+<text x="48" y="58" fill="#f5f5f5" font-family="Arial" font-size="24" font-weight="700">Core request flow</text>
+<text x="48" y="84" fill="#888888" font-family="monospace" font-size="11">the objects / states the rest of the system is built around</text>
 <rect x="48" y="99" width="250" height="4" rx="2" fill="url(#g)"/>
 <g transform="translate(48 132)">
-<rect width="206.4" height="110" rx="17" fill="#111827" stroke="#30363d"/>
-<text x="103.2" y="31" text-anchor="middle" fill="#f85149" font-family="monospace" font-size="10">01</text>
-<text x="103.2" y="63" text-anchor="middle" fill="#f0f6fc" font-family="Arial" font-size="15" font-weight="700">Request</text>
-<text x="103.2" y="86" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="9">ingress</text>
+<rect width="206.4" height="110" rx="17" fill="#242424" stroke="#404040"/>
+<text x="103.2" y="31" text-anchor="middle" fill="#c9a227" font-family="monospace" font-size="10">01</text>
+<text x="103.2" y="63" text-anchor="middle" fill="#f5f5f5" font-family="Arial" font-size="15" font-weight="700">Request</text>
+<text x="103.2" y="86" text-anchor="middle" fill="#888888" font-family="monospace" font-size="9">ingress</text>
 </g><g transform="translate(272.4 132)">
-<rect width="206.4" height="110" rx="17" fill="#111827" stroke="#30363d"/>
-<text x="103.2" y="31" text-anchor="middle" fill="#a371f7" font-family="monospace" font-size="10">02</text>
-<text x="103.2" y="63" text-anchor="middle" fill="#f0f6fc" font-family="Arial" font-size="15" font-weight="700">Auth</text>
-<text x="103.2" y="86" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="9">identity</text>
+<rect width="206.4" height="110" rx="17" fill="#242424" stroke="#404040"/>
+<text x="103.2" y="31" text-anchor="middle" fill="#6bb3d9" font-family="monospace" font-size="10">02</text>
+<text x="103.2" y="63" text-anchor="middle" fill="#f5f5f5" font-family="Arial" font-size="15" font-weight="700">Auth</text>
+<text x="103.2" y="86" text-anchor="middle" fill="#888888" font-family="monospace" font-size="9">identity</text>
 </g><g transform="translate(496.8 132)">
-<rect width="206.4" height="110" rx="17" fill="#111827" stroke="#30363d"/>
-<text x="103.2" y="31" text-anchor="middle" fill="#f85149" font-family="monospace" font-size="10">03</text>
-<text x="103.2" y="63" text-anchor="middle" fill="#f0f6fc" font-family="Arial" font-size="15" font-weight="700">Validation</text>
-<text x="103.2" y="86" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="9">contract</text>
+<rect width="206.4" height="110" rx="17" fill="#242424" stroke="#404040"/>
+<text x="103.2" y="31" text-anchor="middle" fill="#c9a227" font-family="monospace" font-size="10">03</text>
+<text x="103.2" y="63" text-anchor="middle" fill="#f5f5f5" font-family="Arial" font-size="15" font-weight="700">Validation</text>
+<text x="103.2" y="86" text-anchor="middle" fill="#888888" font-family="monospace" font-size="9">contract</text>
 </g><g transform="translate(721.2 132)">
-<rect width="206.4" height="110" rx="17" fill="#111827" stroke="#30363d"/>
-<text x="103.2" y="31" text-anchor="middle" fill="#a371f7" font-family="monospace" font-size="10">04</text>
-<text x="103.2" y="63" text-anchor="middle" fill="#f0f6fc" font-family="Arial" font-size="15" font-weight="700">Transaction</text>
-<text x="103.2" y="86" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="9">durable</text>
+<rect width="206.4" height="110" rx="17" fill="#242424" stroke="#404040"/>
+<text x="103.2" y="31" text-anchor="middle" fill="#6bb3d9" font-family="monospace" font-size="10">04</text>
+<text x="103.2" y="63" text-anchor="middle" fill="#f5f5f5" font-family="Arial" font-size="15" font-weight="700">Transaction</text>
+<text x="103.2" y="86" text-anchor="middle" fill="#888888" font-family="monospace" font-size="9">durable</text>
 </g><g transform="translate(945.6 132)">
-<rect width="206.4" height="110" rx="17" fill="#111827" stroke="#30363d"/>
-<text x="103.2" y="31" text-anchor="middle" fill="#f85149" font-family="monospace" font-size="10">05</text>
-<text x="103.2" y="63" text-anchor="middle" fill="#f0f6fc" font-family="Arial" font-size="15" font-weight="700">Webhook</text>
-<text x="103.2" y="86" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="9">external</text>
+<rect width="206.4" height="110" rx="17" fill="#242424" stroke="#404040"/>
+<text x="103.2" y="31" text-anchor="middle" fill="#c9a227" font-family="monospace" font-size="10">05</text>
+<text x="103.2" y="63" text-anchor="middle" fill="#f5f5f5" font-family="Arial" font-size="15" font-weight="700">Webhook</text>
+<text x="103.2" y="86" text-anchor="middle" fill="#888888" font-family="monospace" font-size="9">external</text>
 </g>
 </svg>
