@@ -20,17 +20,21 @@ The commercial domain is abstracted; the backend engineering is the point.
 
 <p align="center"><img src="./assets/features.svg" width="100%" alt="Campaign Platform features"/></p>
 
-## <code>02 / layers</code>
+## <code>02 / core_model</code>
+
+<p align="center"><img src="./assets/core-model.svg" width="100%" alt="Core request flow"/></p>
+
+## <code>03 / layers</code>
 
 <p align="center"><img src="./assets/architecture-visual.svg" width="100%" alt="Campaign Platform architecture"/></p>
 
 <p align="center"><img src="./assets/overview.svg" width="100%" alt="Campaign Platform system overview"/></p>
 
-## <code>03 / request_lifecycle</code>
+## <code>04 / request_lifecycle</code>
 
 <p align="center"><img src="./assets/flow-visual.svg" width="100%" alt="Campaign Platform request lifecycle"/></p>
 
-## <code>04 / built_for_failure</code>
+## <code>05 / built_for_failure</code>
 
 | Failure | Guard |
 |---|---|
@@ -44,11 +48,13 @@ The commercial domain is abstracted; the backend engineering is the point.
 
 The theme is intentionally boring: **explicit boundary, explicit state, explicit failure**.
 
+## <code>06 / engineering_signature</code>
+
 <p align="center">
   <img src="./assets/engineering-signature.svg" width="100%" alt="Engineering signature"/>
 </p>
 
-## <code>05 / inspect</code>
+## <code>07 / inspect</code>
 
 - [Architecture](docs/ARCHITECTURE.md)
 - [Security model](docs/SECURITY.md)
