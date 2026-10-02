@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="360" viewBox="0 0 1600 360">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#061018"/><stop offset="1" stop-color="#0b1118"/></linearGradient></defs>
+<rect width="1600" height="360" rx="26" fill="url(#bg)"/><rect x="1" y="1" width="1598" height="358" rx="25" fill="none" stroke="#1d5266"/>
+<text x="48" y="58" fill="#16d9ff" font-family="monospace" font-size="24" font-weight="700">LIVE ≠ READY</text>
+<text x="48" y="92" fill="#a8bcc8" font-family="Arial" font-size="21">A process can be running while a dependency required to serve real traffic is unavailable.</text>
+
+<g transform="translate(95 145)">
+<rect width="600" height="145" rx="18" fill="#0a1720" stroke="#55b6ff"/>
+<text x="30" y="42" fill="#55b6ff" font-family="Arial" font-size="28" font-weight="700">Liveness</text>
+<text x="30" y="78" fill="#dfe8ed" font-family="Arial" font-size="18">“Is the application process alive?”</text>
+<text x="30" y="112" fill="#9fb1bb" font-family="Arial" font-size="16">Useful for restart decisions and container/process health.</text>
+</g>
+
+<g transform="translate(905 145)">
+<rect width="600" height="145" rx="18" fill="#0a1720" stroke="#2fe3b0"/>
+<text x="30" y="42" fill="#2fe3b0" font-family="Arial" font-size="28" font-weight="700">Readiness</text>
+<text x="30" y="78" fill="#dfe8ed" font-family="Arial" font-size="18">“Can this instance safely serve real requests?”</text>
+<text x="30" y="112" fill="#9fb1bb" font-family="Arial" font-size="16">Checks configured dependencies such as PostgreSQL before declaring ready.</text>
+</g>
+
+<path d="M695 217H905" stroke="#1d5266" stroke-width="4"/><text x="800" y="204" text-anchor="middle" fill="#ffb547" font-family="Arial" font-size="17" font-weight="700">not equivalent</text>
+</svg>
