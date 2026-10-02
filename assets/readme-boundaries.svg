@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="500" viewBox="0 0 1600 500">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#061018"/><stop offset="1" stop-color="#0b1118"/></linearGradient></defs>
+<rect width="1600" height="500" rx="26" fill="url(#bg)"/><rect x="1" y="1" width="1598" height="498" rx="25" fill="none" stroke="#1d5266"/>
+<text x="48" y="58" fill="#16d9ff" font-family="monospace" font-size="24" font-weight="700">FOUR DIFFERENT TRUST BOUNDARIES</text>
+<text x="48" y="92" fill="#a8bcc8" font-family="Arial" font-size="21">Not every request is “just another API call”. Different callers prove different things before business logic runs.</text>
+
+<g font-family="Arial">
+<g transform="translate(45 140)"><rect width="350" height="290" rx="18" fill="#0a1720" stroke="#55b6ff"/><text x="24" y="42" fill="#55b6ff" font-size="27" font-weight="700">Public</text><text x="24" y="82" fill="#f0f4f6" font-size="18">Example: unsubscribe</text><text x="24" y="125" fill="#9fb1bb" font-size="16">Proves a signed public token.</text><text x="24" y="154" fill="#9fb1bb" font-size="16">No admin session is required.</text><text x="24" y="200" fill="#66df91" font-size="16" font-weight="700">Allowed action:</text><text x="24" y="228" fill="#dfe8ed" font-size="16">only the exact public flow</text></g>
+
+<g transform="translate(415 140)"><rect width="350" height="290" rx="18" fill="#0a1720" stroke="#2fe3b0"/><text x="24" y="42" fill="#2fe3b0" font-size="27" font-weight="700">Authenticated</text><text x="24" y="82" fill="#f0f4f6" font-size="18">Users / campaigns / imports</text><text x="24" y="125" fill="#9fb1bb" font-size="16">Proves application identity/session.</text><text x="24" y="154" fill="#9fb1bb" font-size="16">Then policy/validation decides scope.</text><text x="24" y="200" fill="#66df91" font-size="16" font-weight="700">Allowed action:</text><text x="24" y="228" fill="#dfe8ed" font-size="16">normal application operations</text></g>
+
+<g transform="translate(785 140)"><rect width="350" height="290" rx="18" fill="#0a1720" stroke="#ffb547"/><text x="24" y="42" fill="#ffb547" font-size="27" font-weight="700">Provider</text><text x="24" y="82" fill="#f0f4f6" font-size="18">Webhook / callback</text><text x="24" y="125" fill="#9fb1bb" font-size="16">Proves provider secret header.</text><text x="24" y="154" fill="#9fb1bb" font-size="16">Payload is validated separately.</text><text x="24" y="200" fill="#66df91" font-size="16" font-weight="700">Allowed action:</text><text x="24" y="228" fill="#dfe8ed" font-size="16">process a provider-origin event</text></g>
+
+<g transform="translate(1155 140)"><rect width="400" height="290" rx="18" fill="#0a1720" stroke="#8b5cf6"/><text x="24" y="42" fill="#b89cff" font-size="27" font-weight="700">Admin</text><text x="24" y="82" fill="#f0f4f6" font-size="18">Privileged operational routes</text><text x="24" y="125" fill="#9fb1bb" font-size="16">Requires authentication + admin role.</text><text x="24" y="154" fill="#9fb1bb" font-size="16">Mounted behind explicit middleware.</text><text x="24" y="200" fill="#66df91" font-size="16" font-weight="700">Allowed action:</text><text x="24" y="228" fill="#dfe8ed" font-size="16">administrative changes only</text></g>
+</g>
+</svg>
