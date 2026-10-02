@@ -2,92 +2,41 @@
 
 <table>
 <tr>
-<td width="50%" valign="top">
-
-### What it is
-
-A backend-heavy campaign operations platform built around explicit trust boundaries.
-
-Main areas:
-
-- users
-- campaigns
-- imports
-- validation
-- webhooks
-- unsubscribe
-- admin operations
-- health / readiness
-- production tooling
-
-</td>
-<td width="50%" valign="top">
-
-### Engineering focus
-
-- public ≠ authenticated ≠ provider ≠ admin
-- provider-secret verification
-- signed unsubscribe flow
-- structured redaction
-- separate liveness/readiness
-- PostgreSQL persistence
-- Docker-first production runtime
-- CI security gates
-
-</td>
+<td width="20%" align="center"><b>Express 5</b><br/><sub>API boundary</sub></td>
+<td width="20%" align="center"><b>PostgreSQL</b><br/><sub>v2 persistence</sub></td>
+<td width="20%" align="center"><b>Provider webhooks</b><br/><sub>secret-verified</sub></td>
+<td width="20%" align="center"><b>Signed unsubscribe</b><br/><sub>public flow</sub></td>
+<td width="20%" align="center"><b>live ≠ ready</b><br/><sub>explicit health model</sub></td>
 </tr>
 </table>
 
-<img src="./assets/actual-surfaces.svg" width="100%" alt="Campaign Platform surfaces"/>
-
-<br/>
+<p align="center"><img src="./assets/actual-surfaces.svg" width="100%" alt="Product surfaces"/></p>
 
 <table>
 <tr>
-<td width="52%" valign="top">
-<img src="./assets/features.svg" width="100%" alt="Backend surface"/>
-</td>
-<td width="48%" valign="top">
-
-### Boundary-first design
-
-The platform does not let different request types enter through one generic trust path.
-
-Admin actions, provider callbacks and public flows prove different things before the business layer sees them.
-
-</td>
+<td width="50%" valign="top"><img src="./assets/features.svg" width="100%" alt="Backend surface"/></td>
+<td width="50%" valign="top"><img src="./assets/core-model.svg" width="100%" alt="Core model"/></td>
 </tr>
 </table>
-
-<img src="./assets/core-model.svg" width="100%" alt="Core request model"/>
-
-<br/>
 
 <table>
 <tr>
-<td width="48%" valign="top">
-
-### Failure semantics
-
-A live process is not automatically a ready system.
-
-Dependency failure, invalid provider input, admin exposure and sensitive logging all have explicit guards.
-
-</td>
-<td width="52%" valign="top">
-<img src="./assets/overview.svg" width="100%" alt="Failure guards"/>
-</td>
+<td width="48%" valign="top"><img src="./assets/overview.svg" width="100%" alt="Failure model"/></td>
+<td width="52%" valign="top"><img src="./assets/architecture-visual.svg" width="100%" alt="Architecture"/></td>
 </tr>
 </table>
 
-<img src="./assets/architecture-visual.svg" width="100%" alt="Architecture"/>
+<p align="center"><img src="./assets/flow-visual.svg" width="100%" alt="Request lifecycle"/></p>
+<p align="center"><img src="./assets/engineering-signature.svg" width="100%" alt="Engineering signature"/></p>
 
-<br/>
+<details>
+<summary><b>Engineering notes</b></summary>
 
-<img src="./assets/flow-visual.svg" width="100%" alt="Request lifecycle"/>
+- Public ≠ authenticated ≠ provider ≠ admin
+- Provider callbacks prove their source before business logic
+- Admin routes require explicit role checks
+- Sensitive values are redacted from logs
+- Liveness and dependency readiness are separate
+- CI includes security and secret checks
 
-<br/>
-
-<img src="./assets/engineering-signature.svg" width="100%" alt="Engineering signature"/>
-
-<p align="center"><sub>Private source · public engineering showcase</sub></p>
+</details>
