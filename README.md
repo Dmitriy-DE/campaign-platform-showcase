@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Express_5-000000?style=flat-square&logo=express&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Express-5-000000?style=flat-square&logo=express&logoColor=white"/>
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white"/>
   <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"/>
   <img src="https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white"/>
@@ -10,55 +10,47 @@
 
 # Campaign Platform
 
-A backend-heavy operations platform I built around **users, campaigns, imports, validation, webhooks and production tooling**.
+A backend-heavy operations platform around **users, campaigns, imports, validation, webhooks, unsubscribe flows and production tooling**.
 
-The commercial domain is abstracted; the backend engineering is the point.
+The commercial domain is deliberately abstracted. The showcase focuses on the engineering: boundaries, persistence, security defaults, failure semantics and operational behaviour.
 
-<p align="center"><img src="./assets/product-mockup.svg" width="100%" alt="Campaign Platform operations mockup"/></p>
-
-<p align="center"><sub>Illustrative records; screen hierarchy, labels and visual system are reconstructed from the private source.</sub></p>
+> **Explicit boundary. Explicit state. Explicit failure.**
 
 ## <code>01 / actual_surfaces</code>
 
-<p align="center"><img src="./assets/actual-surfaces.svg" width="100%" alt="Actual product surfaces"/></p>
+<p align="center"><img src="./assets/actual-surfaces.svg" width="100%" alt="Campaign Platform surfaces"/></p>
+
+The API exposes authenticated user/campaign/admin operations, import and validation paths, provider webhook boundaries and a separate public unsubscribe flow with signed token verification.
 
 ## <code>02 / backend_surface</code>
 
-<p align="center"><img src="./assets/features.svg" width="100%" alt="Campaign Platform features"/></p>
+<p align="center"><img src="./assets/features.svg" width="100%" alt="Campaign Platform backend surface"/></p>
 
 ## <code>03 / core_model</code>
 
-<p align="center"><img src="./assets/core-model.svg" width="100%" alt="Core request flow"/></p>
+<p align="center"><img src="./assets/core-model.svg" width="100%" alt="Campaign Platform core request model"/></p>
+
+Public, authenticated, provider and administrative traffic do not enter the application through the same trust boundary.
 
 ## <code>04 / layers</code>
 
 <p align="center"><img src="./assets/architecture-visual.svg" width="100%" alt="Campaign Platform architecture"/></p>
 
-<p align="center"><img src="./assets/overview.svg" width="100%" alt="Campaign Platform system overview"/></p>
+The production runtime is Docker-first, binds explicitly for container deployment, exposes separate liveness/readiness endpoints and keeps PostgreSQL migration/backup operations explicit.
 
-## <code>05 / request_lifecycle</code>
+## <code>05 / security_and_failure</code>
+
+<p align="center"><img src="./assets/overview.svg" width="100%" alt="Campaign Platform failure guards"/></p>
+
+GraphQL is disabled in production unless explicitly enabled. Admin routes require auth + admin role middleware. Provider callbacks require provider secrets. Request logging redacts sensitive fields and query parameters. CI includes secret scanning.
+
+## <code>06 / request_lifecycle</code>
 
 <p align="center"><img src="./assets/flow-visual.svg" width="100%" alt="Campaign Platform request lifecycle"/></p>
 
-## <code>06 / built_for_failure</code>
-
-| Failure | Guard |
-|---|---|
-| forged callback | provider-secret verification |
-| admin exposure | auth + role middleware |
-| sensitive logs | structured redaction |
-| alive process / broken dependency | separate liveness and readiness |
-| secret leak | CI secret scan |
-| schema drift | explicit migrations + verification |
-| UI regression | Playwright E2E |
-
-The theme is intentionally boring: **explicit boundary, explicit state, explicit failure**.
-
 ## <code>07 / engineering_signature</code>
 
-<p align="center">
-  <img src="./assets/engineering-signature.svg" width="100%" alt="Engineering signature"/>
-</p>
+<p align="center"><img src="./assets/engineering-signature.svg" width="100%" alt="Campaign Platform engineering signature"/></p>
 
 ## <code>08 / inspect</code>
 
@@ -66,8 +58,9 @@ The theme is intentionally boring: **explicit boundary, explicit state, explicit
 - [Security model](docs/SECURITY.md)
 - [Sanitised webhook boundary](examples/provider-webhook.ts)
 
-<details><summary><b>Why it is anonymised</b></summary>
+<details>
+<summary><b>Public / private boundary</b></summary>
 
-The private implementation contains domain-specific operations and production configuration that do not need to be public to demonstrate the engineering.
+The implementation contains domain-specific operations and production configuration. This public repository keeps the architecture and engineering patterns while excluding credentials, customer data and production mechanics.
 
 </details>
